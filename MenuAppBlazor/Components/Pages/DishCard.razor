@@ -1,15 +1,15 @@
 ﻿@using MenuAppBlazor.Models;
 
 
-<div class="col-12 col-md-6 text-center">
+<div class="col-12 col-md-6 text-center my-2">
     <div>
         <h4>@Dish.Name</h4>
     </div>
     <div>
-        <img alt="@Dish.Name" src="@Dish.ImageUrl" style="widht: 60%" />
+        <img alt="@Dish.Name" src="@Dish.ImageUrl" style="width: 260px; height: 250px" />
     </div>
     <div>
-        $ @Dish.Price.ToString("N2") 
+       Price: $ @Dish.Price.ToString("N2") 
     </div>
     <div>
         <a class="btn btn-info" href="@($"details/{Dish.Id}")">View Dish</a>
